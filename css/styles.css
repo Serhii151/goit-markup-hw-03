@@ -1,0 +1,301 @@
+/*основной цвет заголовков #2E2F42;*/
+/*другорядний текст #434455*/
+/*фон */
+
+:root {
+    --main-title-color: #2E2F42;
+    --main-text-color: #434455;
+    --active-btn-color: #404BBF;
+}
+
+.link {
+    text-decoration: none;
+}
+
+.list{
+    list-style: none;
+}
+
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+ul {
+    margin: 0;
+    padding-left: 0;
+}
+
+.container {
+    width: 1128px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+}
+
+.img {
+    display: block;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color: var(--main-title-color);
+    background: #FFFFFF;
+}
+
+/*----------HEADER-------------*/
+
+.header {
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+
+.logo > span {
+        color: #4D5AE5;
+}
+
+.logo {
+    font-family: 'Raleway';
+    font-size: 18px;
+    font-weight: 800;
+    line-height: 1.33;
+    color: #2E2F42;
+    text-transform: uppercase;
+}
+
+.nav-link {
+    font-weight: 500;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.02em; 
+        color: #2E2F42;
+        color: var(--main-text-color);
+}
+
+.nav-link:hover,
+.nav-link:focus {
+    color:var(--active-btn-color);
+}
+
+
+
+
+.address-link {
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: 0.03em;
+    color: var(--main-text-color)
+}
+
+.address-link:hover,
+.address-link:focus {
+    color: var(--active-btn-color);
+}
+
+/*----------HERO-------------*/
+
+.hero {
+    background: #2E2F42;
+}
+
+.hero-title {
+    font-size: 56px;
+    line-height: 1.07;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+    margin-bottom: 48px;
+}
+
+.Order-Launch {
+    left: 20px;
+    top: 20px;
+    background: #4D5AE5;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-family: inherit;
+    margin-bottom: 188px;
+}
+
+.Order-Launch:hover,
+.Order-Launch:focus{
+    background: var(--active-btn-color);
+}
+
+/*----------FEATURES-------------*/
+
+.features {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.features-title {
+    font-size: 20px;
+    line-height: 1.2;
+    font-weight: 500;
+    color: var(--main-title-color);
+}
+
+.features-text {
+    letter-spacing: 0.02em;
+    line-height: 1.5;
+    color: var(--main-text-color);
+}
+
+/*----------CONTENT-------------*/
+
+.content {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.content-title {
+    font-size: 36px;
+    line-height: 1.11;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: var(--main-title-color);
+    padding-bottom: 72px;
+}
+
+/*----------ASIDE-------------*/
+
+.aside { 
+    background: #F4F4FD;
+    padding-top: 120px;
+}
+
+.aside-item {
+    background: #FFFFFF;
+    
+}
+
+.aside-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: var(--main-title-color);
+    padding-bottom: 72px;
+}
+
+.aside-name {
+    text-align: center;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    color: var(--main-title-color);
+    letter-spacing: 0.02em;
+}
+
+.aside-text {
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: var(--main-text-color);
+}
+
+/*----------FOOTER-------------*/
+
+.footer-logo {
+    font-family: 'Raleway';
+    font-size: 18px;
+    line-height: 1.16;
+    color: #4D5AE5;
+    text-transform: uppercase;
+}
+
+.footer-logo > span {
+    color: #F4F4FD;
+}
+
+.footer-text {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #E7E9FC;
+    letter-spacing: 0.02em;
+}
+
+.footer {
+    background: #2E2F42;
+}
+
+/*----------PROJEKT-------------*/
+
+.projekt-list {
+
+}
+
+.projekt-item {
+    width: 360px;
+    height: 420px;
+    left: 156px;
+    top: 288px;
+    background: #FFFFFF
+}
+
+.projekt-title {
+    font-size: 20px;
+    line-height: 1.2;
+    font-weight: 500;
+    color: var(--main-title-color);
+    letter-spacing: 0.02em;
+}
+
+.projekt-text {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #434455;
+    letter-spacing: 0.02em;
+}
+
+.filter {
+
+}
+
+.filter-btn {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    font-family: inherit;
+    background: #F4F4FD;
+    color: #4D5AE5;
+    cursor: pointer;
+    letter-spacing: 0.04em;
+}
+
+.filter-btn:hover,
+.filter-btn:focus {
+    background: #404BBF;
+    color: #FFFFFF;
+
+}
+
