@@ -6,6 +6,9 @@
     --main-title-color: #2E2F42;
     --main-text-color: #434455;
     --active-btn-color: #404BBF;
+    --akcent-btn-color: #4D5AE5;
+    --body-background-color: #FFFFFF;
+
 }
 
 .link {
@@ -43,18 +46,21 @@ h6 {
 
 ul {
     margin: 0;
-    padding-left: 0;
+    padding: 0;
 }
 
 .container {
-    width: 1128px;
+    width: 1158px;
     padding-left: 15px;
     padding-right: 15px;
-    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto
 }
 
 .img {
     display: block;
+    max-width: 100%;
+    height: auto;
 }
 
 body {
@@ -71,17 +77,36 @@ body {
     padding-bottom: 24px;
 }
 
+.header-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo link {
+    font-size: 18px;
+    line-height: 1.33;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #2E2F42;
+}
+
 .logo > span {
-        color: #4D5AE5;
+    color: #4D5AE5;
+    
 }
 
 .logo {
     font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
     font-size: 18px;
-    font-weight: 800;
     line-height: 1.33;
     color: #2E2F42;
+    letter-spacing: 0.03em;
     text-transform: uppercase;
+    margin-right: 76px;
 }
 
 .nav-link {
@@ -98,15 +123,43 @@ body {
     color:var(--active-btn-color);
 }
 
+.nav-list {
+    display: flex;
+    gap: 40px;
+}
 
+.nav {
+    display: flex;
+    align-items: center;
+    margin-right: auto;
+}
 
+.address {
+    
+}
 
 .address-link {
     font-style: normal;
     line-height: 1.5;
     letter-spacing: 0.03em;
     color: var(--main-text-color)
+    
 }
+
+/*.address-tell {
+    font-style: normal;
+    line-height: 1.5;
+    margin-left: 40px;
+    letter-spacing: 0.03em;
+    color: var(--main-text-color)
+    
+}*/
+
+.address-list {
+    gap: 40px;
+    display: flex;
+}
+
 
 .address-link:hover,
 .address-link:focus {
@@ -116,29 +169,42 @@ body {
 /*----------HERO-------------*/
 
 .hero {
-    background: #2E2F42;
+    background-color: #2E2F42;
+    padding-top: 188px;
+    padding-bottom: 188px;
 }
 
 .hero-title {
+    font-weight: 700;
     font-size: 56px;
     line-height: 1.07;
-    text-align: center;
     letter-spacing: 0.02em;
-    color: #FFFFFF;
-    margin-bottom: 48px;
+    color: var(--body-background-color);
+    text-align: center;
+    min-width: 494px;
+    
+}
+
+.container-hero {
+    width: 496px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .Order-Launch {
-    left: 20px;
-    top: 20px;
-    background: #4D5AE5;
-    font-weight: 500;
     font-size: 16px;
-    line-height: 1.5;
-    color: #FFFFFF;
+    color: var(--body-background-color);
+    background-color: var(--akcent-btn-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    padding: 16px 32px;
+    margin-top: 48px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    border: none;
     cursor: pointer;
-    font-family: inherit;
-    margin-bottom: 188px;
+
 }
 
 .Order-Launch:hover,
@@ -151,12 +217,27 @@ body {
 .features {
     padding-top: 120px;
     padding-bottom: 120px;
+    
+}
+
+.features-list {
+    display: flex;
+    width: 1128px;
+    height: 104px;
+    gap: 24px;
+    
+}
+
+.features-item {
+    width: 264px;
+    height: 104px;
 }
 
 .features-title {
     font-size: 20px;
     line-height: 1.2;
     font-weight: 500;
+    letter-spacing: 0.02em;
     color: var(--main-title-color);
 }
 
@@ -164,6 +245,7 @@ body {
     letter-spacing: 0.02em;
     line-height: 1.5;
     color: var(--main-text-color);
+    margin-top: 8px;
 }
 
 /*----------CONTENT-------------*/
@@ -183,6 +265,17 @@ body {
     padding-bottom: 72px;
 }
 
+.content-list {
+    display: flex;
+    gap: 24px;
+}
+
+.content-item {
+    width: 360px;
+    height: 300px;
+
+}
+
 /*----------ASIDE-------------*/
 
 .aside { 
@@ -191,9 +284,27 @@ body {
 }
 
 .aside-item {
-    background: #FFFFFF;
-    
+    background: var(--body-background-color);
+    width: calc((100% - 24px) / 4);
+     
 }
+
+/*.aside-item-foto {
+    padding-bottom: 32px;
+}
+*/
+
+.container-text {
+    padding: 16px 32px;
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
+}
+
+.aside-list {
+    display: flex;
+    gap: 24px;
+    padding-bottom: 120px;
+}
+
 
 .aside-title {
     font-weight: 700;
@@ -213,6 +324,7 @@ body {
     line-height: 1.2;
     color: var(--main-title-color);
     letter-spacing: 0.02em;
+    padding-bottom: 8px;
 }
 
 .aside-text {
@@ -221,6 +333,8 @@ body {
     text-align: center;
     letter-spacing: 0.02em;
     color: var(--main-text-color);
+    padding-bottom: 32px;
+
 }
 
 /*----------FOOTER-------------*/
@@ -229,7 +343,7 @@ body {
     font-family: 'Raleway';
     font-size: 18px;
     line-height: 1.16;
-    color: #4D5AE5;
+    color: var(--akcent-btn-color);
     text-transform: uppercase;
 }
 
@@ -242,16 +356,24 @@ body {
     line-height: 1.5;
     color: #E7E9FC;
     letter-spacing: 0.02em;
+    padding-top: 16px;
 }
 
 .footer {
     background: #2E2F42;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    padding-left: 156px;
+}
+
+.footer-logo-text {
+    width: 264px;
 }
 
 /*----------PROJEKT-------------*/
 
 .projekt-list {
-
+    
 }
 
 .projekt-item {
@@ -259,7 +381,7 @@ body {
     height: 420px;
     left: 156px;
     top: 288px;
-    background: #FFFFFF
+    background: var(--body-background-color)
 }
 
 .projekt-title {
@@ -277,8 +399,17 @@ body {
     letter-spacing: 0.02em;
 }
 
-.filter {
+/*----------FILTER-------------*/
 
+.filter {
+   padding-top: 96px; 
+   padding-bottom: 120px;
+}
+
+.filter-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
 .filter-btn {
@@ -287,15 +418,48 @@ body {
     line-height: 1.5;
     font-family: inherit;
     background: #F4F4FD;
-    color: #4D5AE5;
+    color: var(--akcent-btn-color);
     cursor: pointer;
     letter-spacing: 0.04em;
+    padding: 12px 24px;
+    border: 1px solid var(--body-background-color);
 }
 
 .filter-btn:hover,
 .filter-btn:focus {
-    background: #404BBF;
-    color: #FFFFFF;
+    background: var(--active-btn-color);
+    color: var(--body-background-color);
 
 }
 
+.projekt-list{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 72px;
+    gap: 48px 24px;
+}
+
+.projekt-item{
+    border: 1px solid #E7E9FC;
+    background-color: var(--body-background-color);
+    
+}
+
+.projekt-wrap {
+    padding: 32px 16px;
+
+}
+
+.projekt-title{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+}
+
+.projekt-text{
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    margin-top: 8px;
+}
