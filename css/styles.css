@@ -57,7 +57,7 @@ ul {
     margin-right: auto
 }
 
-.img {
+img {
     display: block;
     max-width: 100%;
     height: auto;
@@ -73,8 +73,7 @@ body {
 /*----------HEADER-------------*/
 
 .header {
-    padding-top: 24px;
-    padding-bottom: 24px;
+    border-bottom: 1px solid #E7E9FC;
 }
 
 .header-container {
@@ -98,6 +97,8 @@ body {
 }
 
 .logo {
+    padding-top: 24px;
+    padding-bottom: 24px;
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 400;
@@ -110,12 +111,15 @@ body {
 }
 
 .nav-link {
+    display: block;
     font-weight: 500;
-        font-size: 16px;
-        line-height: 1.5;
-        letter-spacing: 0.02em; 
-        color: #2E2F42;
-        color: var(--main-text-color);
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em; 
+    color: #2E2F42;
+    color: var(--main-text-color);
+    padding-top: 24px;
+    padding-bottom: 24px;
 }
 
 .nav-link:hover,
@@ -139,21 +143,16 @@ body {
 }
 
 .address-link {
+    display: block;
+    padding-top: 24px;
+    padding-bottom: 24px;
     font-style: normal;
     line-height: 1.5;
     letter-spacing: 0.03em;
     color: var(--main-text-color)
-    
 }
 
-/*.address-tell {
-    font-style: normal;
-    line-height: 1.5;
-    margin-left: 40px;
-    letter-spacing: 0.03em;
-    color: var(--main-text-color)
-    
-}*/
+
 
 .address-list {
     gap: 40px;
@@ -175,6 +174,9 @@ body {
 }
 
 .hero-title {
+    width: 496px;
+    margin-left: auto;
+    margin-right: auto;
     font-weight: 700;
     font-size: 56px;
     line-height: 1.07;
@@ -185,11 +187,7 @@ body {
     
 }
 
-.container-hero {
-    width: 496px;
-    margin-left: auto;
-    margin-right: auto;
-}
+
 
 .Order-Launch {
     font-size: 16px;
@@ -222,15 +220,11 @@ body {
 
 .features-list {
     display: flex;
-    width: 1128px;
-    height: 104px;
     gap: 24px;
-    
 }
 
 .features-item {
-    width: 264px;
-    height: 104px;
+    width: calc((100% - 3 * 24) / 4);
 }
 
 .features-title {
@@ -251,7 +245,6 @@ body {
 /*----------CONTENT-------------*/
 
 .content {
-    padding-top: 120px;
     padding-bottom: 120px;
 }
 
@@ -262,7 +255,7 @@ body {
     letter-spacing: 0.02em;
     text-transform: capitalize;
     color: var(--main-title-color);
-    padding-bottom: 72px;
+    margin-bottom: 72px;
 }
 
 .content-list {
@@ -271,9 +264,7 @@ body {
 }
 
 .content-item {
-    width: 360px;
-    height: 300px;
-
+    width: calc((100% - 2 * 24) / 3);
 }
 
 /*----------ASIDE-------------*/
@@ -281,28 +272,24 @@ body {
 .aside { 
     background: #F4F4FD;
     padding-top: 120px;
+    padding-bottom: 120px;
 }
 
 .aside-item {
     background: var(--body-background-color);
-    width: calc((100% - 24px) / 4);
-     
+    width: calc((100% - 3 * 24px) / 4);
 }
 
-/*.aside-item-foto {
-    padding-bottom: 32px;
-}
-*/
+
 
 .container-text {
-    padding: 16px 32px;
+    padding: 32px 16px;
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .aside-list {
     display: flex;
     gap: 24px;
-    padding-bottom: 120px;
 }
 
 
@@ -314,7 +301,7 @@ body {
     letter-spacing: 0.02em;
     text-transform: capitalize;
     color: var(--main-title-color);
-    padding-bottom: 72px;
+    margin-bottom: 72px;
 }
 
 .aside-name {
@@ -324,7 +311,7 @@ body {
     line-height: 1.2;
     color: var(--main-title-color);
     letter-spacing: 0.02em;
-    padding-bottom: 8px;
+    margin-bottom: 8px;
 }
 
 .aside-text {
@@ -333,8 +320,6 @@ body {
     text-align: center;
     letter-spacing: 0.02em;
     color: var(--main-text-color);
-    padding-bottom: 32px;
-
 }
 
 /*----------FOOTER-------------*/
@@ -356,14 +341,13 @@ body {
     line-height: 1.5;
     color: #E7E9FC;
     letter-spacing: 0.02em;
-    padding-top: 16px;
+    margin-top: 16px;
 }
 
 .footer {
     background: #2E2F42;
     padding-top: 100px;
     padding-bottom: 100px;
-    padding-left: 156px;
 }
 
 .footer-logo-text {
@@ -408,8 +392,11 @@ body {
 
 .filter-list {
     display: flex;
-    flex-direction: row;
     justify-content: center;
+    gap: 24px;
+}
+
+.filter-item {
 }
 
 .filter-btn {
@@ -422,14 +409,15 @@ body {
     cursor: pointer;
     letter-spacing: 0.04em;
     padding: 12px 24px;
-    border: 1px solid var(--body-background-color);
+    border-radius: 4px;
+    border: 1px solid #E7E9FC;
 }
 
 .filter-btn:hover,
 .filter-btn:focus {
     background: var(--active-btn-color);
     color: var(--body-background-color);
-
+    border-color:transparent ;
 }
 
 .projekt-list{
@@ -440,12 +428,12 @@ body {
 }
 
 .projekt-item{
-    border: 1px solid #E7E9FC;
     background-color: var(--body-background-color);
-    
 }
 
 .projekt-wrap {
+    border: 1px solid #E7E9FC;
+    border-top: none;
     padding: 32px 16px;
 
 }
